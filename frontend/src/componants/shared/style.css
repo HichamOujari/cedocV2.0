@@ -1,0 +1,859 @@
+a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+}
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.NavBar>.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.NavBar>.logo>.icon{
+    width: 50px;
+    height: 50px;
+}
+
+.NavBar>.logo>.title{
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 19px;
+    margin-left: 10px;
+}
+
+.NavBar>.right{
+    display: flex;
+}
+
+.NavBar>.right>.navEle{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.NavBar>.right>.navEle>a>li,.NavBar>.right>.navEle>li{
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+.NavBar>.right>.navEle>a>li,.NavBar>.right>.navEle>li,.NavBar>.right>.navEle>.doctorant>.dropdownEle_doctorantNavbar>a>li{
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 19px;
+    margin-left: 10px;
+    padding: 14px;
+    margin-top: 0;
+    height: 24px;
+    text-align: center;
+    width: 130px;
+}
+
+.NavBar>.right>.navEle>a>li:hover,.NavBar>.right>.navEle>li:hover,.NavBar>.right>.navEle>.doctorant>.dropdownEle_doctorantNavbar>a>li:hover{
+    background-color: #2a88b448;
+}
+
+.NavBar>.right>.navEle>.doctorant{
+    position: relative;
+}
+
+
+.NavBar>.right>.navEle>.doctorant:hover .dropdownEle_doctorantNavbar{
+    display: flex;
+}
+
+.NavBar>.right>.navEle>.doctorant>.dropdownEle_doctorantNavbar{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    width: 177px;
+}
+.NavBar>.right>.navEle>.doctorant>.dropdownEle_doctorantNavbar>a>li{
+    margin-bottom: 5px;
+    margin-top: 2px;
+}
+
+.NavBar>.right>.Tooright{
+    display: flex;
+}
+
+.NavBar>.right>.Tooright>.Input{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    border-right: 1px solid gray;
+}
+
+.NavBar>.right>.Tooright>.Input>.input{
+    height: 20px;
+    margin-right: 5px;
+    padding: 4px;
+}
+
+.NavBar>.right>.Tooright>.Input>.Icon{
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.NavBar>.right>.Tooright>.Login{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.NavBar>.right>.Tooright>.Login>.title{
+    color: #81D3F8;
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.NavBar>.right>.Tooright>.Login>.icon{
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.NavBar>.right>.Tooright>.AVATAR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 20px white;
+    position: relative;
+    cursor: pointer;
+}
+.NavBar>.right>.Tooright>.AVATAR:hover .profil_deconnect_Doct,.profil_deconnect_Doct:hover{
+    display: flex;
+}
+.NavBar>.right>.Tooright>.AVATAR>.profil_deconnect_Doct{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    top: 43px;
+    left: -40px;
+    box-shadow: 2px 2px 10px white;
+}
+.NavBar>.right>.Tooright>.AVATAR>.profil_deconnect_Doct>li,.NavBar>.right>.Tooright>.AVATAR>.profil_deconnect_Doct>li>a{
+    height: 20px;
+    margin-top: 5px;
+    color: white;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.NavBar>.right>.Tooright>.AVATAR>.profil_deconnect_Doct>li:hover{
+    background-color: rgb(36, 32, 32);
+}
+
+.TitleComp{
+    text-align: center;
+    width: auto;
+    margin-bottom: 60px;
+}
+.TitleComp>.title{
+    font-size: 40px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.TitleComp>.border{
+    display: grid;
+    grid-template-columns: 1FR 1fr 1fr;
+}
+.TitleComp>.border>.black{
+    height: 7px;
+    background-color: black;
+}
+.TitleComp>.border>.vert{
+    height: 7px;
+    background-color: #3f9bb8;
+}
+
+.TableComp{
+    width: 100%;
+}
+.TableComp>.title{
+    background-color: rgba(225, 241, 255, 0.475);
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.TableComp>table{
+    width: 100%;
+    text-align: center;
+}
+.TableComp>table>thead>tr{
+    height: 30px;
+    background: #66b4bf;
+    cursor: pointer;
+}
+
+.TableComp>table>thead>tr>th>.Attribute{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.TableComp>table>thead>tr>th>.Attribute>.icons{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TableComp>table>thead>tr>th>.Attribute>.icons>li{
+    height: 10px;
+}
+.TableComp>table>tbody>tr>td{
+    height: 25px;
+    border: 1px solid #ddd;
+}
+
+.TableComp>table>tbody>tr>td>.Attribute{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.TableComp>table>tbody>tr>td:first-child{
+    text-align: left;
+    padding-left: 10px;
+}
+.TableComp>table>tbody>tr>td>.Attribute>.icon{
+    color: rgba(26, 119, 119, 0.658);
+    cursor: pointer;
+}
+
+
+.BarAdmin{
+
+}
+
+.BarAdmin>.sideBar{
+    width: 300px;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+.BarAdmin>.sideBar>.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    background-image: url("../../assets/bgAdmin.png");
+    background-repeat: no-repeat;
+    
+}
+
+.BarAdmin>.sideBar>.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+.BarAdmin>.sideBar>.logo>.icon{
+    width: 50px;
+    height: 50px;
+}
+.BarAdmin>.sideBar>.logo>.title{
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 19px;
+    margin-left: 10px;
+}
+   
+
+.BarAdmin>.sideBar>.ElesSideBar{
+    background: #253a45a4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.BarAdmin>.sideBar>.ElesSideBar>li{
+    width: 90%;
+    margin-top: 15px;
+    padding-left: 10%;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.BarAdmin>.sideBar>.ElesSideBar>li>a,.sousElementSidebarAdmin>li>a{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+.BarAdmin>.sideBar>.ElesSideBar>li>a>.icon{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.BarAdmin>.sideBar>.ElesSideBar>li>a>.title:hover,.sousElementSidebarAdmin>li>a:hover{
+    color: #3f9bb8;
+}
+
+.BarAdmin>.sideBar>.ElesSideBar>li:hover .sousElementSidebarAdmin{
+    display: flex;
+}
+
+.sousElementSidebarAdmin{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    left: 300px;
+    top: -10px;
+    background-color: #253a45dc;
+    width: 220px;
+    z-index: 2;
+}
+
+.sousElementSidebarAdmin>li>a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.BarAdmin>.navBar{
+    position: absolute;
+    top: 0;
+    left: 300px;
+    display: flex;
+    justify-content: space-between;
+    width: Calc(100% - 300px);
+    background-color: #012e3a;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    box-shadow: 2px 2px 20px black;
+}
+
+.BarAdmin>.navBar>.BarRecherche{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+
+}
+
+.BarAdmin>.navBar>.BarRecherche>input{
+    height: 20px;
+    border: none;
+    width: 300px;
+    margin-left: 10px;
+}
+.BarAdmin>.navBar>.BarRecherche>.icon{
+    cursor: pointer;
+}
+
+
+.BarAdmin>.navBar>.profil{
+    margin-right: 20px;
+    position: relative;
+}
+
+.BarAdmin>.navBar>.profil>.icon{
+    color: white;
+    cursor: pointer;
+}
+
+.BarAdmin>.navBar>.profil:hover .AdminProfilDropdown{
+    display: flex;
+}
+
+
+.BarAdmin>.navBar>.profil>.AdminProfilDropdown{
+    display: none;
+    background-color: #253a45;
+    flex-direction: column;
+    position: absolute;
+    left: -58px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    z-index: 2;
+}
+
+.BarAdmin>.navBar>.profil>.AdminProfilDropdown>li,.BarAdmin>.navBar>.profil>.AdminProfilDropdown>li>a{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+
+.BarAdmin>.navBar>.profil>.AdminProfilDropdown>li:hover,.BarAdmin>.navBar>.profil>.AdminProfilDropdown>li>a:hover{
+    color: #3f9bb8;
+}
+
+.PathingPageComp{
+    margin-bottom: 60px;
+}
+
+.PathingPageComp>.title{
+    color: #012e3a;
+    font-size: 30px;
+    font-weight: 800;
+}
+.PathingPageComp>.path{
+    display: flex;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.PathingPageComp>.path>.first{
+    
+}
+.PathingPageComp>.path>.last{
+    color: #647f87;
+    margin-left: 5px;
+}
+
+.primary{
+    background-color: #14b5e8;
+}
+.warning{
+    background-color: #f4a309;
+}
+.success{
+    background-color: #31d956;
+}
+.CardDashboardComp{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    box-shadow: 2px 2px 30px black;
+    border-radius: 7px;
+}
+
+.CardDashboardComp>.title{
+    font-size: 16px;
+    margin-right: 10px;
+    width: 200px;
+    margin-left: 30px;
+}
+
+.CardDashboardComp>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    font-weight: 900;
+    margin-right: 20px;
+
+}
+.CardDashboardComp>div>.nbr{
+    font-size: 35px;
+    margin-right: 10px;
+}
+.CardDashboardComp>div>.type{
+    font-size: 30px;
+}
+.CardDashboardComp>.icon{
+    color: white;
+    font-size: 100px;
+    margin-right: 10px;
+}
+
+
+.ProfilSharedComp{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.ProfilSharedComp>.left{
+    box-shadow:1px 1px 20px #14b7e871;
+    width: 20%;
+    min-width: 200px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    flex-direction: column;
+}
+
+.ProfilSharedComp>.left>.icon{
+    font-size: 80px;
+    color: #064e41;
+}
+.ProfilSharedComp>.left>.name{
+    font-weight: 800;
+}
+.ProfilSharedComp>.left>.grade{
+    width: 150px;
+    text-align: center;
+}
+
+
+.ProfilSharedComp>.right{
+    box-shadow:1px 1px 20px #14b7e873;
+    width: 60%;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.ProfilSharedComp>.right>.TextInput{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.ProfilSharedComp>.right>.TextInput>.title{
+    width: 80%;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+.ProfilSharedComp>.right>.TextInput>input{
+    border:2px solid #064e41;
+    width: 80%;
+    height: 25px;
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.ProfilSharedComp>.right>.CheckBoxInput{
+    width: 80%;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.ProfilSharedComp>.right>.CheckBoxInput>input{
+    cursor: pointer;
+}
+.ProfilSharedComp>.right>.CheckBoxInput>label{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.ProfilSharedComp>.right>.btnSubmit{
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 30px;
+    background-color: #064e41;
+    border: 1px solid #064e41;
+    border-radius: 7px;
+    color: white;
+    font-weight:600;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+}
+
+.none{
+    display: none;
+}
+
+.FormInfosComp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background: rgb(0, 0, 0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+.FormInfosComp>.FormContent{
+    width: 70vw;
+    background: rgb(243, 241, 241);
+    position: relative;
+}
+.FormInfosComp>.FormContent>.closeIcon{
+    color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    transform-origin: all;
+}
+.FormInfosComp>.FormContent>.closeIcon:hover{
+    transform: scale(1.3);
+}
+.FormInfosComp>.FormContent>.formInputs{
+    margin-top: 34px;
+    padding-top: 20px;
+    width: 100%;
+    border-top: 1px solid gray;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    max-height: 90vh;
+    overflow: auto;
+}
+.grid{
+    display: grid;
+}
+.FormInfosComp>.FormContent>.formInputs>.TextInput{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.FormInfosComp>.FormContent>.formInputs>.TextInput>.title{
+    width: 80%;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+.FormInfosComp>.FormContent>.formInputs>.TextInput>input{
+    border:2px solid #064e41;
+    width: 80%;
+    height: 25px;
+    padding-left: 10px;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.FormInfosComp>.FormContent>.Members{
+    width: 92%;
+    border-top: 2px solid black;
+    height: 40vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
+
+.FormInfosComp>.FormContent>.Members>.title{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.FormInfosComp>.FormContent>.Members>.ensemble{
+    margin-top: 30px;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+.FormInfosComp>.FormContent>.Members>.ensemble>.header{
+    display: flex;
+    justify-content: space-between;
+}
+.FormInfosComp>.FormContent>.Members>.ensemble>.header>.title{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.FormInfosComp>.FormContent>.Members>.ensemble>.header>.add{
+    display: flex;
+    cursor: pointer;
+}
+
+.FormInfosComp>.FormContent>.Members>.ensemble>.header>.add>.icon{
+    font-size: 20px;
+}
+.FormInfosComp>.FormContent>.Members>.ensemble>.header>.add>.title{
+    
+}
+
+.FormInfosComp>.FormContent>.Members>.ensemble>.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.FormInfosComp>.FormContent>.Members>.ensemble>.items>.item{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background: rgb(183, 212, 212);
+    margin-right: 10px;
+    border-radius: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 1px solid rgb(109, 145, 145);
+}
+
+.FormInfosComp>.FormContent>.Members>.ensemble>.items>.item>.name{
+    text-transform: capitalize;
+}
+
+.FormInfosComp>.FormContent>.Members>.ensemble>.items>.item>.icon{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.MemberComp{
+    margin-top: 10px;
+
+}
+.MemberComp>.TypeMember{
+    font-size: 18px;
+    font-weight: 800;
+
+}
+.MemberComp>.Contents{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.61);
+    border-radius: 5px;
+    padding-bottom: 6px;
+    background-color: rgba(214, 210, 210, 0.829);
+}
+.MemberComp>.Contents>.ele{
+    border: 1px solid #14b5e8;
+    background-color: white;
+    border-radius: 10px;
+    width: max-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.MemberComp>.Contents>.ele:hover{
+    color: #14b5e8;
+    font-weight: 800;
+}
+
+.files{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+.files{
+    text-decoration: none;
+    color: black;
+}
+.files>.file{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.files>.file:hover{
+    border: 1px solid;
+}
+.files>.file>.icon{
+    font-size: 46px;
+}
+.files>.file>.title{
+    font-weight: 800;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.files>.file>.type{
+    font-size: 18px;
+    text-align: center;
+}
+.files>a>.file>.type>span{
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.MainAncienDoctorant>.Content>.showDoctFileSection{
+    height: 90vh;
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.863);
+    position: fixed;
+    top: 5vh;
+    left: 5%;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.MainAncienDoctorant>.Content>.showDoctFileSection>.CloseBar{
+    display: flex;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-top: 5px;
+    border-bottom: 2px solid ;
+    width: 100%;
+}
+.MainAncienDoctorant>.Content>.showDoctFileSection>.CloseBar>.CloseIcon,.MainAncienDoctorant>.Content>.showDoctFileSection>.CloseBar>a>.DownloadIcon{
+    font-size: 35px;
+    color: black;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.MainAncienDoctorant>.Content>.showDoctFileSection>.CloseBar>.CloseIcon:hover,.MainAncienDoctorant>.Content>.showDoctFileSection>.CloseBar>a>.DownloadIcon:hover{
+    color: white;
+}
+.MainAncienDoctorant>.Content>.showDoctFileSection>.content{
+    margin-top: 10px;
+    width: 95%;
+    height: Calc(90vh - 63px);
+}

@@ -1,0 +1,37 @@
+.MainStructure{
+    position: absolute;
+    top: 50px;
+    width: Calc(100vw - 360px);
+    height: Calc(100vh - 80px);
+    left: 300px;
+    padding-left: 60px;
+    padding-top: 30px;
+    overflow: scroll;
+}
+.MainStructure::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+}
+
+.MainStructure>.Content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainStructure>.Content>.AddMore{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    cursor: pointer;
+}
+
+.MainStructure>.Content>.AddMore>.icon{
+    color: #2eb94c;
+    font-size: 40px;
+}
+
+.MainStructure>.Content>.AddMore>.title{
+    font-size: 23px;
+}

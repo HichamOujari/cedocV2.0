@@ -1,0 +1,98 @@
+.MainEnsgDocotrantPreinscrit{
+    position: absolute;
+    top: 50px;
+    width: Calc(100vw - 360px);
+    height: Calc(100vh - 80px);
+    left: 300px;
+    padding-left: 60px;
+    padding-top: 30px;
+    overflow: scroll;
+}
+.MainEnsgDocotrantPreinscrit::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+}
+
+.MainEnsgDocotrantPreinscrit>.Content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainEnsgDocotrantPreinscrit>.Content>.AddMore{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    cursor: pointer;
+}
+
+.MainEnsgDocotrantPreinscrit>.Content>.AddMore>.icon{
+    color: #2eb94c;
+    font-size: 40px;
+}
+
+.MainEnsgDocotrantPreinscrit>.Content>.AddMore>.title{
+    font-size: 23px;
+}
+
+
+.sectionAcceptDoct{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.349);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sectionAcceptDoct>.sectionBarClose{
+    background-color: #ddd;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: Calc(60% - 10px);
+    border-bottom: 2px solid ;
+}
+.sectionAcceptDoct>.sectionBarClose>.icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+.sectionAcceptDoct>.content{
+    width: 60%;
+    height: 40vh;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sectionAcceptDoct>.content>#idDoctAccpt{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 30px;
+    border: 2px solid rgb(16, 95, 16);
+    border-radius: 10px;
+    font-size: 17px;
+}
+.sectionAcceptDoct>.content>.ChoixEncadrant{
+    margin-bottom: 20px;
+    width: 400px;
+    height: 30px;
+    border: 2px solid rgb(16, 95, 16);
+    border-radius: 10px;
+    font-size: 17px;
+}
+.sectionAcceptDoct>.content>button{
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(16, 95, 16);
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}

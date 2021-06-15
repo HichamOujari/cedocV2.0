@@ -1,0 +1,219 @@
+.MainInscription{
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.MainInscription>.FormInscription{
+    
+    box-shadow: 3px 3px 15px rgb(12,136,153,0.61);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.MainInscription>.FormInscription>.first{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.MainInscription>.FormInscription>.first>.NumDossier,.MainInscription>.FormInscription>.first>.CNE{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.MainInscription>.FormInscription>.first>.NumDossier>.title,.MainInscription>.FormInscription>.first>.CNE>.title{
+    margin-left: 10px;
+}
+
+.MainInscription>.FormInscription>.first>.NumDossier>.NumDossierInput,.MainInscription>.FormInscription>.first>.CNE>.CNEInput{
+    border: 2px solid #0c9980;
+    border-radius: 5px;
+    color: gray;
+    height: 30px;
+    font-size: 17px;
+    padding-left: 6px;
+    margin-top: 6px;
+}
+
+
+
+.MainInscription>.FormInscription>.Recu{
+    margin-top: 20px;
+    width: 90%;
+}
+.MainInscription>.FormInscription>.Recu>.title{
+    margin-left: 10px;
+}
+.MainInscription>.FormInscription>.Recu>.Upload{
+    background: #53abb7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.MainInscription>.FormInscription>.Recu>.Upload>.icon{
+    font-size: 50px;
+}
+.MainInscription>.FormInscription>.Recu>.Upload>.text{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+.MainInscription>.FormInscription>.Recu>.uploaded>.file{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+.MainInscription>.FormInscription>.Recu>.uploaded>.file>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.MainInscription>.FormInscription>.Recu>.uploaded>.file>.name{
+    margin-left: 10px;
+}
+
+
+.MainInscription>.FormInscription>.Recu>.uploaded>.file>div>.progress{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #53abb78a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    width: 70px;
+    border-radius: 7px;
+}
+
+.MainInscription>.FormInscription>.btnSubmit{
+    margin-top: 30px;
+    background: #0c9980;
+    color: white;
+    width: 15vw;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #0c9980;
+}
+
+
+
+
+.MainProfilDoct{
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainProfilDoct>.FormProfil{
+    padding-left:15%;
+    padding-right: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    box-shadow: 3px 3px 15px rgb(12,136,153,0.61);
+    padding-top: 30px;
+}
+
+.MainProfilDoct>.FormProfil>.top{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+.MainProfilDoct>.FormProfil>.top>.icon{
+    font-size: 100px;
+    color: #064e41;
+}
+.MainProfilDoct>.FormProfil>.top>.title{
+    font-weight: 800;
+    font-size: 25px;
+}
+
+
+.MainProfilDoct>.FormProfil>.Inputs{
+    margin-top: 20px;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.MainProfilDoct>.FormProfil>.Inputs>div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+.MainProfilDoct>.FormProfil>.Inputs>.ConfirmPassInput{
+    display: block;
+}
+
+.MainProfilDoct>.FormProfil>.Inputs>div>div>p,.MainProfilDoct>.FormProfil>.Inputs>.ConfirmPassInput>p{
+    margin-left: 10px;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+.MainProfilDoct>.FormProfil>.Inputs>div>div>input,.MainProfilDoct>.FormProfil>.Inputs>.ConfirmPassInput>input{
+    height: 25px;
+    border: 2px solid #064e41;
+    border-radius: 4px;
+    padding-left: 10px;
+    width: 180px;
+}
+.MainProfilDoct>.FormProfil>.Inputs>.ConfirmPassInput>input{
+    width: Calc(100% - 15px);
+}
+
+.MainProfilDoct>.FormProfil>.ShowPass{
+    width: 100%;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+.MainProfilDoct>.FormProfil>.ShowPass>input{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.MainProfilDoct>.FormProfil>.ShowPass>label{
+    cursor: pointer;
+}
+
+.MainProfilDoct>.FormProfil>.submitBtn{
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 30px;
+    background-color: #064e41;
+    border: 1px solid #064e41;
+    border-radius: 7px;
+    color: white;
+    font-weight:600;
+    cursor: pointer;
+}
+.TableMyFile{
+    width: 80%;
+}
